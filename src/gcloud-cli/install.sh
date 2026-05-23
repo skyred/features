@@ -296,4 +296,12 @@ export CLOUDSDK_PYTHON="$INSTALL_DIR/platform/bundledpythonunix/bin/python3"
     echo "⚠️ Warning: Could not initialize gcloud automatically. You may need to run 'gcloud init' manually."
 }
 
+# Install GKE Auth Plugin if requested
+if [ "${INSTALLGKEAUTHPLUGIN}" = "true" ] || [ "${INSTALL_GKE_AUTH_PLUGIN}" = "true" ]; then
+    echo "📦 Installing gke-gcloud-auth-plugin..."
+    "$INSTALL_DIR/bin/gcloud" components install gke-gcloud-auth-plugin --quiet || {
+        echo "⚠️ Warning: Could not install gke-gcloud-auth-plugin automatically."
+    }
+fi
+
 echo "✅ Google Cloud CLI installation complete!"

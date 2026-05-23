@@ -31,13 +31,15 @@ These examples show how to use features from this repository in a devcontainer:
 }
 ```
 
-Or use individual features:
+Or use individual features with an additonal plugin:
 
 ```jsonc
 {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/jajera/features/gcloud-cli:1": {}
+        "ghcr.io/jajera/features/gcloud-cli:1": {
+            "installGkeAuthPlugin": true
+        }
     }
 }
 ```
