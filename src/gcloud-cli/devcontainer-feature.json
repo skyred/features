@@ -1,7 +1,7 @@
 {
     "name": "Google Cloud CLI",
     "id": "gcloud-cli",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Installs Google Cloud CLI (gcloud) for Google Cloud Platform development.",
     "documentationURL": "https://cloud.google.com/sdk/docs/install",
     "options": {
