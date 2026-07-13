@@ -1,10 +1,12 @@
 name: "Release dev container features"
 on:
-  workflow_dispatch:
+  release:
+    types: [published] # Triggers automatically when you hit "Publish Release"
+  workflow_dispatch:   # Keeps the manual "Run workflow" button just in case
 
 jobs:
   deploy:
-    if: ${{ github.ref == 'refs/heads/main' }}
+    # Removed the 'if' condition so it can process release events cleanly
     runs-on: ubuntu-latest
     permissions:
       contents: write
