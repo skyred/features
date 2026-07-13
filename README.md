@@ -21,12 +21,12 @@ These examples show how to use features from this repository in a devcontainer:
 {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/jajera/features/ag:1": {},
-        "ghcr.io/jajera/features/agentcore-cli:1": {},
-        "ghcr.io/jajera/features/amazon-q-cli:1": {},
-        "ghcr.io/jajera/features/aws-sam-cli:1": {},
-        "ghcr.io/jajera/features/gcloud-cli:1": {},
-        "ghcr.io/jajera/features/zip:1": {}
+        "ghcr.io/skyred/features/ag:1": {},
+        "ghcr.io/skyred/features/agentcore-cli:1": {},
+        "ghcr.io/skyred/features/amazon-q-cli:1": {},
+        "ghcr.io/skyred/features/aws-sam-cli:1": {},
+        "ghcr.io/skyred/features/gcloud-cli:1": {},
+        "ghcr.io/skyred/features/zip:1": {}
     }
 }
 ```
@@ -37,7 +37,7 @@ Or use individual features with an additonal plugin:
 {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-        "ghcr.io/jajera/features/gcloud-cli:1": {
+        "ghcr.io/skyred/features/gcloud-cli:1": {
             "installGkeAuthPlugin": true
         }
     }
